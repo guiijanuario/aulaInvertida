@@ -13,7 +13,7 @@ public class Exercicio1 {
         System.out.println("[------- Ver o produto mais barato -------]");
         System.out.println("[----- Digite o preço dos 3 produtos -----]");
         for (int i = 0; i < 3; i++){
-            System.out.println("[Digite o " + i + " produto: ");
+            System.out.println("[Digite o " + (i + 1) + " produto: ");
             precosDigitados.add(sc.nextDouble());
         }
 
