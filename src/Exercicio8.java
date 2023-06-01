@@ -1,22 +1,23 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class Exercicio8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> numeros = new ArrayList<>();
 
-        for(int i = 1; i <= 5; i++){
+        for(int i = 1; i <= 10; i++){
             System.out.println("Insira o " + i + "ª " + "número inteiro: " );
             numeros.add(scanner.nextInt());
         }
 
+        System.out.println("Não reverso: " + numeros);
 
-        for(int numero : numeros){
-            System.out.println("Os números inseridos foram: " + numero);
-        }
+        Collections.reverse(numeros);
 
+        System.out.println("Reverso:" + numeros);
 
     }
 }
